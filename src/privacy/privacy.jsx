@@ -5,7 +5,7 @@ const Privacy = () => {
   return (
     <div>
         <Link to={'/'} className='flex justify-center items-center pt-10  '>
-            <img className='w-[50px] duration-75 hover:scale-[130%]' src={require('../logos/bookworm_emblem_black.png')} alt="logo" />
+            <img className='w-[50px] duration-75 hover:scale-[120%]' src={require('../logos/bookworm_emblem_black.png')} alt="logo" />
         </Link>
         <div className='flex flex-col justify-center items-center '>
             <h1 className='text-[30px] font-bold text-center'>Политика в отношении обработки <br /> персональных данных</h1>

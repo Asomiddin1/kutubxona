@@ -18,14 +18,15 @@ const Phone = () => {
     <div className="mt-[150px] relative">
     <div className="flex justify-center items-center">
         <Link to={'/'}>
-        <img className="w-[250px] duration-75 hover:scale-[120%]" src={require('../logos/bookworm_logo_www_black.png')} alt="logo" />
+        <img className="w-[250px] duration-75 hover:scale-[110%]" src={require('../logos/bookworm_logo_www_black.png')} alt="logo" />
         </Link>
     </div>
     <div className='px-[5%] sm:px-[1%]'>
     <div className="flex flex-col justify-center pb-5 items-center mt-10 mb-5 rounded-[20px] shad_ui  ">
-      <div className="  select-none w-[400px]    h-[500px]  flex justify-center  items-center rounded-[20px]">
-        {/* <img className="  select-none w-[600px]"  src={require('./images  11/phone.png')} alt="logo"/> */}
-        <LazyLoad />
+      <div className="  select-none w-[400px]    h-[500px]  flex justify-center  items-center rounded-[20px]">{/* <img className="  select-none w-[600px]"  src={require('./images  11/phone.png')} alt="logo"/> */}
+        <div className="">
+            <img className="h-[440px] w-[230px]" src={require('./images/screenshot.png')} alt="" />
+          </div>
       </div>
 
       <h1 className='px-4 sm:text-[16px]  text-[14px]'>Скачайте Now из вашего магазина приложений:</h1>
