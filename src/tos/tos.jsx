@@ -5,7 +5,7 @@ const Tos = () => {
   return (
     <div>
         <Link to={'/'} className='flex justify-center items-center pt-10  '>
-            <img className='w-[50px]' src="https://nowapp.me/now-logo-icon.svg?7.1.2" alt="logo" />
+            <img className='w-[50px]' src={require('../logos/bookworm_emblem_black.png')} alt="logo" />
         </Link>
         <div className='flex flex-col justify-center items-center '>
             <h1 className='text-[30px] font-bold text-center'>Политика в отношении обработки <br /> персональных данных</h1>

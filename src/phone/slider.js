@@ -23,9 +23,6 @@ export default class LazyLoad extends Component {
           <div className="">
             <img className="h-[410px] w-[285px]" src={require('./images/screenshot.png')} alt="" />
           </div>
-          <div className="">
-            <img className="h-[410px] w-[285px]" src={require('./images/screenshot.png')} alt="" />
-          </div>
         </Slider>
       </div>
     );
