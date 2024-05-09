@@ -24,7 +24,7 @@ const Phone = () => {
     <div className='px-[5%] sm:px-[1%]'>
     <div className="flex flex-col justify-center pb-5 items-center mt-10 mb-5 rounded-[20px] shad_ui  ">
       <div className="  select-none w-[400px]    h-[500px]  flex justify-center  items-center rounded-[20px]">
-        <img className="  select-none w-[600px]"  src={require('./phone.png')} alt="logo"/>
+        {/* <img className="  select-none w-[600px]"  src={require('./images  11/phone.png')} alt="logo"/> */}
         <LazyLoad />
       </div>
 
