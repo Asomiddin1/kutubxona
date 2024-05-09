@@ -18,7 +18,7 @@ const Phone = () => {
     <div className="mt-[150px] relative">
     <div className="flex justify-center items-center">
         <Link to={'/'}>
-        <img className="w-[250px] duration-75 hover:scale-[130%]" src={require('../logos/bookworm_logo_www_black.png')} alt="logo" />
+        <img className="w-[250px] duration-75 hover:scale-[120%]" src={require('../logos/bookworm_logo_www_black.png')} alt="logo" />
         </Link>
     </div>
     <div className='px-[5%] sm:px-[1%]'>
