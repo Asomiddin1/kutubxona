@@ -21,7 +21,7 @@ const Phone = () => {
         
       <button onClick={()=> {
          dispatch({ type: 'LANG' })
-        }} >{state.lang ? <img src={flagUZ} alt="" />:<img src={flagRU} alt="" />}</button>
+        }} >{state.lang ? <img src={flagRU} alt="" />:<img src={flagUZ} alt="" />}</button>
     </div>
     <div className='px-[5%] sm:px-[1%]'>
     <div className="flex flex-col justify-center pb-5 items-center mt-5 mb-5 rounded-[20px] shad_ui  ">
