@@ -1,11 +1,22 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const Privacy = () => {
+  const topFunc = ()=>{
+    window.scrollTo({
+      top: 100,
+      left: 100,
+      behavior: "smooth",
+    });
+  }
+
+  useEffect(()=>{
+
+  },[])
   return (
     <div>
         <Link to={'/'} className='flex justify-center items-center pt-10  '>
-            <img className='w-[50px] duration-75 hover:scale-[120%]' src={require('../logos/bookworm_emblem_black.png')} alt="logo" />
+            <img id='logo' className='w-[50px] duration-75 hover:scale-[120%]' src={require('../logos/bookworm_emblem_black.png')} alt="logo" />
         </Link>
         <div className='flex flex-col justify-center items-center '>
             <h1 className='text-[30px] font-bold text-center'>Политика в отношении обработки <br /> персональных данных</h1>
@@ -16,6 +27,8 @@ const Privacy = () => {
               <p className='max-w-[600px] px-4 mt-5 '><span className='font-semibold'>1.2</span> Настоящая политика Оператора в отношении обработки персональных данных (далее – Политика) применяется ко всей информации, которую Оператор может получить о посетителях веб-сайта https://nowapp.me, а также его субдоменов и пользователях мобильного приложения Now.</p>
             </div>
         </div>
+
+        <button onClick={topFunc}>top</button>
     </div>
   )
 }

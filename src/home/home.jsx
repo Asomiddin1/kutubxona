@@ -27,7 +27,7 @@ const Home = () => {
         link:'/tos'
       },
       {
-        name: ' Медиа-кит'
+        name: '© 2024 Made with ❤️ by Bookworm Group'
       },
     ]
     return (
