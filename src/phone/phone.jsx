@@ -5,6 +5,8 @@ import googleplayUZ from './images/google-play-uz.svg'
 import appstoreRu from './images/app-store-ru.svg'
 import googleplayRU from './images/google-play-ru.svg'
 import { Context } from '../context'
+import flagRU from './images/flagRu.svg'
+import flagUZ from './images/flagUz.svg'
 
 
 const Phone = () => {
@@ -12,13 +14,14 @@ const Phone = () => {
   console.log(state.lang);
   return (
     <div className="mt-[170px] relative">
-    <div className="flex justify-start sm:gap-20 items-center px-4">
+    <div className="flex justify-start sm:gap-20 gap-10 items-center sm:px-4 px-6">
         <Link to={'/'}>
         <img className="w-[250px] duration-75 hover:scale-[110%]" src={require('../logos/bookworm_logo_www_black.png')} alt="logo" />
         </Link>
+        
       <button onClick={()=> {
          dispatch({ type: 'LANG' })
-        }} >{state.lang ? 'RU':'UZ'}</button>
+        }} >{state.lang ? <img src={flagUZ} alt="" />:<img src={flagRU} alt="" />}</button>
     </div>
     <div className='px-[5%] sm:px-[1%]'>
     <div className="flex flex-col justify-center pb-5 items-center mt-5 mb-5 rounded-[20px] shad_ui  ">
