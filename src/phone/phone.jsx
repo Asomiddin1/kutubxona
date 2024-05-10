@@ -1,19 +1,9 @@
 import React from 'react'
-import LazyLoad from './slider'
 import { Link } from 'react-router-dom'
+import appstore from './images/app-store-uz.svg'
+import googleplay from './images/google-play-uz.svg'
 
 const Phone = () => {
-    const stors = [
-        {
-          name: 'App Store'
-        },
-        {
-          name: 'Google Play'
-        },
-        {
-          name: 'App Gallery'
-        },
-      ]
   return (
     <div className="mt-[150px] relative">
     <div className="flex justify-center items-center">
@@ -25,18 +15,14 @@ const Phone = () => {
     <div className="flex flex-col justify-center pb-5 items-center mt-10 mb-5 rounded-[20px] shad_ui  ">
       <div className="  select-none w-[400px]    h-[500px]  flex justify-center  items-center rounded-[20px]">{/* <img className="  select-none w-[600px]"  src={require('./images  11/phone.png')} alt="logo"/> */}
         <div className="">
-            <img className="h-[440px] w-[230px]" src={require('./images/screenshot.png')} alt="" />
+            <img className="h-[440px] w-[238px] select-none" src={require('./images/photo_2024-05-10_12-18-03-portrait.png')} alt="" />
           </div>
       </div>
 
-      <h1 className='px-4 sm:text-[16px]  text-[14px]'>Скачайте Now из вашего магазина приложений:</h1>
+      <h1 className='px-4 sm:text-[14px]  text-[14px]'>Скачайте Bookworm из вашего магазина приложений:</h1>
           <div className="flex  justify-center gap-4 mt-4">
-            {stors.map(c => (
-              <div className=" select-none">
-                <h1 key={c.name} className=" button  cursor-pointer underline-offset-1">{c.name}</h1>
-                <p className="w-[0px] target-element  duration-300  bg-[black] h-[2px]"></p>
-              </div>
-            ))}
+           <img className='w-[140px] cursor-pointer' src={appstore} alt="lo" />
+           <img className='w-[140px] cursor-pointer' src={googleplay} alt="lo" />
           </div>
     </div>
     </div>
