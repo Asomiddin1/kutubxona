@@ -13,15 +13,15 @@ const Phone = () => {
   const {state , dispatch} = useContext(Context)
   console.log(state.lang);
   return (
-    <div className="mt-[170px] relative">
-    <div className="flex justify-start sm:gap-20 gap-10 items-center sm:px-4 px-6">
+    <div className="mt-10 relative">
+    <div className="flex justify-center sm:gap-20 gap-10 items-center sm:px-4 px-6">
         <Link to={'/'}>
-        <img className="w-[250px] duration-75 hover:scale-[110%]" src={require('../logos/bookworm_logo_www_black.png')} alt="logo" />
+        <img className="w-[220px]  duration-200 ease-linear hover:scale-[110%]" src={require('../logos/bookworm_logo_www_black.png')} alt="logo" />
         </Link>
         
       <button onClick={()=> {
          dispatch({ type: 'LANG' })
-        }} >{state.lang ? <img src={flagRU} alt="" />:<img src={flagUZ} alt="" />}</button>
+        }} >{state.lang ? <img className='w-[27px]' src={flagRU} alt="" />:<img className='w-[27px]'  src={flagUZ} alt="" />}</button>
     </div>
     <div className='px-[5%] sm:px-[1%]'>
     <div className="flex flex-col justify-center pb-5 items-center mt-5 mb-5 rounded-[20px] shad_ui  ">
@@ -31,7 +31,7 @@ const Phone = () => {
           </div>
       </div>
 
-      <h1 className='px-4 sm:text-[14px]  text-[14px]'>{state.lang ? `Ilovalar do'koningizdan Bookworm-ni yuklab oling`:'Скачайте Bookworm из вашего магазина приложений:'} </h1>
+      <h1 className='px-4 sm:text-[14px] text-center  text-[14px]'>{state.lang ? `Ilovalar do'koningizdan Bookworm-ni yuklab oling`:'Скачайте Bookworm из вашего магазина приложений:'} </h1>
           <div className="flex  justify-center gap-4 mt-4">
            <img className='w-[140px] cursor-pointer' src={state.lang ?  appstoreUz : appstoreRu} alt="lo" />
            <img className='w-[140px] cursor-pointer' src={state.lang ?  googleplayUZ : googleplayRU} alt="lo" />
