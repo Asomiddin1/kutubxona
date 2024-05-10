@@ -12,7 +12,7 @@ const Phone = () => {
   console.log(state.lang);
   return (
     <div className="mt-[170px] relative">
-    <div className="flex justify-start gap-20 items-center as">
+    <div className="flex justify-start gap-20 items-center px-4">
         <Link to={'/'}>
         <img className="w-[250px] duration-75 hover:scale-[110%]" src={require('../logos/bookworm_logo_www_black.png')} alt="logo" />
         </Link>
