@@ -8,6 +8,7 @@ const Home = () => {
     const {state ,dispatch} = useContext(Context)
 
     useEffect(() => {
+      window.scrollTo(0, 0);
       setTimeout(() => {
         setTime(false)
       }, 1000);
@@ -37,7 +38,7 @@ const Home = () => {
       },
     ]
     return (
-      <div data-aos={`${time ? 'zoom-in' : ''}`} data-aos-dalay='500' data-aos-duration='1000' className={`w-full h-[100vh] pt-10 flex flex-col justify-center items-center  ${time ? 'blur' : ''}`}>
+      <div data-aos={`${time ? 'zoom-in' : ''}`} data-aos-dalay='500' data-aos-duration='1000' className={` h-[100vh] pt-10 flex flex-col justify-center items-center  ${time ? 'blur' : ''}`}>
         <Phone />
         <div className="">
             <div className="flex flex-col justify-center text-center mt-8 mb-10 ">

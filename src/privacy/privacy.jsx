@@ -2,17 +2,11 @@ import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const Privacy = () => {
-  const topFunc = ()=>{
-    window.scrollTo({
-      top: 100,
-      left: 100,
-      behavior: "smooth",
-    });
-  }
-
-  useEffect(()=>{
-
-  },[])
+  
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
+    
   return (
     <div>
         <Link to={'/'} className='flex justify-center items-center pt-10  '>
@@ -28,7 +22,6 @@ const Privacy = () => {
             </div>
         </div>
 
-        <button onClick={topFunc}>top</button>
     </div>
   )
 }
