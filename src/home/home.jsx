@@ -45,21 +45,18 @@ const Home = () => {
         nameUZ:'Foydalanish shartlari',
         link:'/tos'
       },
-      {
-        nameRU: '© 2024 Made with ❤️ by Bookworm Group',
-        nameUZ: '© 2024 Made with ❤️ by Bookworm Group'
-      },
     ]
     return (
-      <div data-aos={`${time ? 'zoom-in' : ''}`} data-aos-dalay='500' data-aos-duration='1000' className={` h-[100vh] relative ${deviceType === 'Mobile' ? 'toMobile':''}  pt-[60px] flex flex-col justify-center items-center  ${time ? 'blur' : ''}`}>
+      <div data-aos={`${time ? 'zoom-in' : ''}`} data-aos-dalay='500' data-aos-duration='1000' className={` h-[100vh] relative ${deviceType === 'Mobile' ? 'toMobile':'pt-[100px]'} flex flex-col justify-center items-center   ${time ? 'blur' : ''}`}>
         <Phone />
         <div className="">
-            <div className="flex flex-col justify-center text-center mt-8 mb-10 ">
+            <div className="flex flex-col justify-center text-center mt-8 mb-8 ">
             {footerlinks.map(c => (
               <div className=" ">
-                <Link to={`${c.link ? `${c.link}`:'' }`} key={c.name} className=" text-[#b3b3b3] button cursor-pointer underline-offset-1">{state.lang ? c.nameUZ:c.nameRU}</Link>
+                <Link to={`${c.link ? `${c.link}`:'' }`} key={c.name} className=" button cursor-pointer underline-offset-4 duration-100  hover:underline  ">{state.lang ? c.nameUZ:c.nameRU}</Link>
               </div>
             ))}
+            <p className='text-center mt-2'>© 2024 Made with ❤️ by Bookworm Group</p>
           </div>
         </div>
 

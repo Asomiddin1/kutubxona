@@ -17,7 +17,7 @@
 }
 
 body {
-  padding: 60px 0px;
+  padding-top: 60px;
   margin: 8px;
   display: block;
 }
@@ -42,7 +42,7 @@ body {
 
 @media (orientation: landscape) {
 .toMobile {
-     padding-top: 380px;
+     padding-top: 400px;
   }
 }
 

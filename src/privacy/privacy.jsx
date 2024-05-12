@@ -1,12 +1,30 @@
-import React, { useEffect } from 'react'
+import React, { useContext, useEffect } from 'react'
 import { Link } from 'react-router-dom'
+import { Context } from '../context';
 
 const Privacy = () => {
-  
+  const {state ,dispatch} = useContext(Context)
     useEffect(() => {
       window.scrollTo(0, 0);
     }, []);
     
+    const footerlinks = [
+      {
+        nameRU: 'Обратная связь',
+        nameUZ:'Qayta aloqa',
+        link:''
+      },
+      {
+        nameRU: 'Политика конфиденциальности',
+        nameUZ:'Maxfiylik siyosati',
+        link:'/privacy'
+      },
+      {
+        nameRU: ' Условия использования',
+        nameUZ:'Foydalanish shartlari',
+        link:'/tos'
+      },
+    ] 
   return (
     <div>
         <Link to={'/'} className='flex justify-center items-center pt-10  '>
@@ -22,6 +40,17 @@ const Privacy = () => {
             </div>
         </div>
 
+
+        <div className="">
+            <div className="flex flex-col justify-center text-center mt-8 mb-8 ">
+            {footerlinks.map(c => (
+              <div className=" ">
+                <Link to={`${c.link ? `${c.link}`:'' }`} key={c.name} className=" button cursor-pointer underline-offset-4 duration-100  hover:underline  ">{state.lang ? c.nameUZ:c.nameRU}</Link>
+              </div>
+            ))}
+            <p className='text-center mt-2'>© 2024 Made with ❤️ by Bookworm Group</p>
+          </div>
+        </div>
     </div>
   )
 }

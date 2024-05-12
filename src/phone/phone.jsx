@@ -13,7 +13,7 @@ const Phone = () => {
   const {state , dispatch} = useContext(Context)
   console.log(state.lang);
   return (
-    <div className="mt-10">
+    <div className="">
     <div className="flex justify-center sm:gap-20 gap-10 items-center sm:px-4 px-6">
         <Link to={'/'}>
         <img className="w-[220px]  duration-200 ease-linear hover:scale-[110%]" src={require('../logos/bookworm_logo_www_black.png')} alt="logo" />
