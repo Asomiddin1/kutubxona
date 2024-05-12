@@ -26,7 +26,7 @@ const Privacy = () => {
       },
     ] 
   return (
-    <div>
+    <div className=''>
         <Link to={'/'} className='flex justify-center items-center pt-10  '>
             <img id='logo' className='w-[50px] duration-75 hover:scale-[120%]' src={require('../logos/bookworm_emblem_black.png')} alt="logo" />
         </Link>
