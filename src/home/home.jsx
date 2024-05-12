@@ -47,7 +47,7 @@ const Home = () => {
       },
     ]
     return (
-      <div data-aos={`${time ? 'zoom-in' : ''}`} data-aos-dalay='500' data-aos-duration='1000' className={` h-[100vh] relative ${deviceType === 'Mobile' ? 'toMobile':'pt-[100px]'} flex flex-col justify-center items-center   ${time ? 'blur' : ''}`}>
+      <div data-aos={`${time ? 'zoom-in' : ''}`} data-aos-dalay='500' data-aos-duration='1000' className={`   ${deviceType === 'Mobile' ? 'toMobile mt-10':'pt-[60px]'} flex flex-col justify-center items-center   ${time ? 'blur' : ''}`}>
         <Phone />
         <div className="">
             <div className="flex flex-col justify-center text-center mt-8 mb-8 ">

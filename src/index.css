@@ -16,11 +16,7 @@
   background: radial-gradient(white, black);
 }
 
-body {
-  padding-top: 60px;
-  margin: 8px;
-  display: block;
-}
+
 
 .button:hover+.target-element {
   width: 100%;
@@ -42,7 +38,7 @@ body {
 
 @media (orientation: landscape) {
 .toMobile {
-     padding-top: 400px;
+     padding-top: 100px;
   }
 }
 
