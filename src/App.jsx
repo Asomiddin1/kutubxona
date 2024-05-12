@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Home from './home/home'
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from 'react-router-dom'
 import RootLayout from './layout/RootLayout'
@@ -18,7 +18,7 @@ const App = () => {
     )
   )
   return (
-    <div className='px-4'>
+    <div className={`px-4 `}>
       <RouterProvider router={routes}/>
     </div>
   )

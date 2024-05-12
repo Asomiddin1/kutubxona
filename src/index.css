@@ -39,3 +39,10 @@ body {
   -moz-box-shadow: -4px 1px 172px 18px rgba(201, 201, 201, 0.93);
   box-shadow: -4px 1px 172px 18px rgba(201, 201, 201, 0.93);
 }
+
+@media (orientation: landscape) {
+.toMobile {
+     padding-top: 380px;
+  }
+}
+
