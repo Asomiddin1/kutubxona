@@ -25,13 +25,13 @@ const Phone = () => {
     </div>
     <div className='px-[5%] sm:px-[1%]'>
     <div className="flex flex-col justify-center pb-5 items-center mt-5 mb-5 rounded-[20px] shad_ui  ">
-      <div className="  select-none w-[400px]    h-[500px]  flex justify-center  items-center rounded-[20px]">{/* <img className="  select-none w-[600px]"  src={require('./images  11/phone.png')} alt="logo"/> */}
+      <div className="  select-none w-[400px]    h-[500px]  flex justify-center  items-center rounded-[20px]">
         <div className="">
             <img className="h-[440px]  select-none" src={require('./images/photo_2024-05-10_12-18-03-portrait.png')} alt="" />
           </div>
       </div>
 
-      <h1 className='px-4 sm:text-[13px] text-center  text-[12px]'>{state.lang ? `Ilovalar do'koningizdan Bookworm-ni yuklab oling`:'Скачайте Bookworm из вашего магазина приложений:'} </h1>
+      <h1 className='px-4 sm:text-[18px] text-center  text-[16px]'>{state.lang ? `Bookworm ilovasini yuklab oling`:'Установите приложение Bookworm'} </h1>
           <div className="flex  justify-center gap-4 mt-4">
            <img className='w-[140px] cursor-pointer' src={state.lang ?  appstoreUz : appstoreRu} alt="lo" />
            <img className='w-[140px] cursor-pointer' src={state.lang ?  googleplayUZ : googleplayRU} alt="lo" />
