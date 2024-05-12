@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Phone from '../phone/phone';
 import { Link } from 'react-router-dom';
+import { Context } from '../context';
 
 const Home = () => {
     const [time, setTime] = useState(true)
+    const {state ,dispatch} = useContext(Context)
 
     useEffect(() => {
       setTimeout(() => {
@@ -15,19 +17,23 @@ const Home = () => {
   
     const footerlinks = [
       {
-        name: 'Обратная связь',
+        nameRU: 'Обратная связь',
+        nameUZ:'Qayta aloqa',
         link:''
       },
       {
-        name: 'Политика конфиденциальности',
+        nameRU: 'Политика конфиденциальности',
+        nameUZ:'Maxfiylik siyosati',
         link:'/privacy'
       },
       {
-        name: ' Условия использования',
+        nameRU: ' Условия использования',
+        nameUZ:'Foydalanish shartlari',
         link:'/tos'
       },
       {
-        name: '© 2024 Made with ❤️ by Bookworm Group'
+        nameRU: '© 2024 Made with ❤️ by Bookworm Group',
+        nameUZ: '© 2024 Made with ❤️ by Bookworm Group'
       },
     ]
     return (
@@ -37,11 +43,13 @@ const Home = () => {
             <div className="flex flex-col justify-center text-center mt-8 mb-10 ">
             {footerlinks.map(c => (
               <div className=" ">
-                <Link to={`${c.link ? `${c.link}`:'' }`} key={c.name} className=" text-[#b3b3b3] button cursor-pointer underline-offset-1">{c.name}</Link>
+                <Link to={`${c.link ? `${c.link}`:'' }`} key={c.name} className=" text-[#b3b3b3] button cursor-pointer underline-offset-1">{state.lang ? c.nameUZ:c.nameRU}</Link>
               </div>
             ))}
           </div>
         </div>
+
+    
    
     </div>
     );

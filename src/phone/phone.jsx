@@ -13,7 +13,7 @@ const Phone = () => {
   const {state , dispatch} = useContext(Context)
   console.log(state.lang);
   return (
-    <div className="mt-10 relative">
+    <div className="mt-10">
     <div className="flex justify-center sm:gap-20 gap-10 items-center sm:px-4 px-6">
         <Link to={'/'}>
         <img className="w-[220px]  duration-200 ease-linear hover:scale-[110%]" src={require('../logos/bookworm_logo_www_black.png')} alt="logo" />
@@ -31,7 +31,7 @@ const Phone = () => {
           </div>
       </div>
 
-      <h1 className='px-4 sm:text-[14px] text-center  text-[14px]'>{state.lang ? `Ilovalar do'koningizdan Bookworm-ni yuklab oling`:'Скачайте Bookworm из вашего магазина приложений:'} </h1>
+      <h1 className='px-4 sm:text-[13px] text-center  text-[12px]'>{state.lang ? `Ilovalar do'koningizdan Bookworm-ni yuklab oling`:'Скачайте Bookworm из вашего магазина приложений:'} </h1>
           <div className="flex  justify-center gap-4 mt-4">
            <img className='w-[140px] cursor-pointer' src={state.lang ?  appstoreUz : appstoreRu} alt="lo" />
            <img className='w-[140px] cursor-pointer' src={state.lang ?  googleplayUZ : googleplayRU} alt="lo" />

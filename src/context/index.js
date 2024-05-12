@@ -12,7 +12,7 @@ const reducer = (state = initialVal, action) => {
 
   switch (type) {
     case 'LANG':
-        localStorage.setItem('lang', !state.mode);
+        localStorage.setItem('lang', !state.lang);
         return { ...state, lang: !state.lang };
     case 'MODE':
        localStorage.setItem('darkMode', !state.mode);
