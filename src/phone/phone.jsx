@@ -14,7 +14,7 @@ const Phone = () => {
   console.log(state.lang);
   return (
     <div className=" mx-auto max-w-[450px]">
-    <div className="flex justify-center sm:gap-20 gap-10 items-center sm:px-4 px-6 overflow-x-hidden">
+    <div className="flex justify-center sm:gap-20 gap-10 items-center sm:px-4 px-6  overflow-y-hidden">
         <Link to={'/'}>
         <img className="w-[220px]  duration-200 ease-linear hover:scale-[110%]" src={require('../logos/bookworm_logo_www_black.png')} alt="logo" />
         </Link>
