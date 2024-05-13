@@ -47,8 +47,8 @@ const Home = () => {
       },
     ]
     return (
-      <div data-aos={`${time ? 'zoom-in' : ''}`} data-aos-dalay='500' data-aos-duration='1000' className={`overflow-x-hidden     ${deviceType === 'Mobile' ? 'toMobile mt-10':'pt-[60px]'}  ${time ? 'blur' : ''}`}>
-        <div className='w-full px-4'>
+      <div data-aos={`${time ? 'zoom-in' : ''}`} data-aos-dalay='500' data-aos-duration='1000' className={`overflow-x-hidden    ${deviceType === 'Mobile' ? 'toMobile':'pt-[60px]'}  ${time ? 'blur' : ''}`}>
+        <div className={`w-full px-4 ${deviceType === 'Mobile' ? 'pt-10':''}`}>
           <Phone />
         </div>
         
