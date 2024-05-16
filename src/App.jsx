@@ -4,12 +4,14 @@ import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } 
 import RootLayout from './layout/RootLayout'
 import Privacy from './privacy/privacy'
 import Tos from './tos/tos'
+import Book from './book/book'
 
 const App = () => {
   const routes = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<RootLayout />}>
-        <Route index element={<Home />}/>
+        <Route index element={<Home />}/> 
+        <Route path='/book' element={<Book />} />
         <Route path='/privacy' element={<Privacy />} />
         <Route path='/tos' element={<Tos />} />
       </Route>
