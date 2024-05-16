@@ -8,7 +8,7 @@ const Book = () => {
                 <img id='logo' className='w-[50px] duration-75 hover:scale-[120%]' src={require('../logos/bookworm_emblem_black.png')} alt="logo" />
             </Link>
             <div className='w-full'>
-            <div className='shad_ui max-w-[500px] rounded-[20px] mx-auto mt-10  py-10 px-6'>
+            <div className='shad_ui max-w-[500px] rounded-[20px] mx-auto my-10  py-10 px-6'>
                <div className='flex justify-center'>
                  <img className='w-[200px]' src="https://assets.asaxiy.uz/product/items/desktop/df763d665084612d719bfaf359cc6bb32021040216281526613clrASkcKsR.jpg.webp" alt="book" />
                </div>
